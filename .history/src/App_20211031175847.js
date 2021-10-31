@@ -1,11 +1,13 @@
 import logo from './logo.svg';
+import styled from 'styled-components';
 import './App.css';
-import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar>
+        <h1>Navbar</h1>
+      </Navbar>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
@@ -13,5 +15,15 @@ function App() {
   );
 }
 
+const Navbar = styled.nav`
+  width: 100%;
+  padding: 0;
+  border: 1px solid green;
+  h1 {
+    border: 1px solid green;
+    padding:0;
+    m
+  }
+`
 
 export default App;

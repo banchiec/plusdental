@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import styled from 'styled-components';
+import { Zap } from '@styled-icons/octicons'
 import './App.css';
 import Navbar from './components/Navbar';
 
@@ -13,5 +15,9 @@ function App() {
   );
 }
 
+const RedZap = styled(Zap)`
+  color:red;
+  width: 30px;
+`
 
 export default App;
